@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7E01D;
+}
+
+#js-logo {
+    fill: transparent;
+    animation: lettersFill .5s ease forwards 5s;
+}
+
+#js-logo path:nth-child(1) {
+    animation: letterAppear 2s ease forwards;
+}
+#js-logo path:nth-child(2) {
+    animation: letterAppear 2s ease forwards .3s;
+}
+#js-logo path:nth-child(3) {
+    animation: letterAppear 2s ease forwards .6s;
+}
+#js-logo path:nth-child(4) {
+    animation: letterAppear 2s ease forwards .9s;
+}
+#js-logo path:nth-child(5) {
+    animation: letterAppear 2s ease forwards 1.2s;
+}
+#js-logo path:nth-child(6) {
+    animation: letterAppear 2s ease forwards 1.5s;
+}
+#js-logo path:nth-child(7) {
+    animation: letterAppear 2s ease forwards 1.8s;
+}
+#js-logo path:nth-child(8) {
+    animation: letterAppear 2s ease forwards 2.1s;
+}
+#js-logo path:nth-child(9) {
+    animation: letterAppear 2s ease forwards 2.4s;
+}
+#js-logo path:nth-child(10) {
+    animation: letterAppear 2s ease forwards 2.7s;
+}
+
+
+@keyframes letterAppear {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes lettersFill {
+    to {
+        fill: black;
+    }
+}
